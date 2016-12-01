@@ -1,0 +1,25 @@
+{
+    "name": "sebastianwestberg/google-api",
+    "description": "A REST API providing information from the Google Places API",
+    "type": "project",
+    "require": {
+        "silex/silex": "^2.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Westberg",
+            "email": "sebastianostbrink@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sebastianwestberg\\GoogleApi\\": "src/",
+            "Sebastianwestberg\\Tests\\GoogleApi\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*"
+    }
+}

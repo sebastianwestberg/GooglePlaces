@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    php:
+        build: php7-fpm
+        expose:
+            - 9000
+        volumes:
+            - ../:/var/www/api
+    nginx:
+        build: nginx
+        ports:
+            - 80:80
+        links:
+            - php
+        volumes_from:
+            - php
+        volumes:
+            - ./logs/nginx/:/var/log/nginx
