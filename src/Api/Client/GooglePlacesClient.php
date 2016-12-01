@@ -55,4 +55,9 @@ abstract class GooglePlacesClient implements ApiClientInterface
 
         return $code;
     }
+
+    /**
+     * @return string Base uri for the implementing API Client
+     */
+    abstract protected function getBaseUrl();
 }

@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 interface ApiClientInterface
 {
     /**
-     * @param array  $parameters Parameters to query API
+     * @param array  $parameters Parameters used to build the query
      * @param string $output     Can be either json or xml, defaults to json
      */
     public function __construct($parameters = array(), $output);
