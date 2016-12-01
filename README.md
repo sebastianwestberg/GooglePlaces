@@ -33,5 +33,5 @@ vendor/bin/phpunit tests/
 
 Available endpoints:
 
-* /stores - Collection of resources (optionally /stores?pageToken=token)
-* /stores/{place_id}
+* /stores - GET Collection of resources (optionally /stores?pageToken=token)
+* /stores/{place_id} - GET a resource by place_id
