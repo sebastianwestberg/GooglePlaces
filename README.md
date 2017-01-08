@@ -1,4 +1,4 @@
-# Google Places "mirroring" API
+# Google Places API wrapper
 
 ### Instructions
 
